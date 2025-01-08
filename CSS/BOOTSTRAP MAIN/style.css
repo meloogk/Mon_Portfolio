@@ -37,3 +37,27 @@
       transform: translateY(-200px) scale(1);
     }
   }
+
+
+  @keyframes custom-bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .skill-item {
+    display: inline-block;
+    background-color: #fbbf24; /* Tailwind's yellow-300 */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px; /* Fully rounded */
+    animation: custom-bounce 1.5s infinite ease-in-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+  }

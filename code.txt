@@ -1,0 +1,295 @@
+<!-- Skills Section -->
+  <section id="skills" class="bg-gray-100 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8 animate-fadeIn">Compétences</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-yellow-300 text-white px-4 py-2 rounded-full animate-bounce">Cybersécurité</span>
+        <span class="bg-yellow-300 text-white px-4 py-2 rounded-full animate-bounce">Intelligence Artificielle</span>
+        <span class="bg-yellow-300 text-white px-4 py-2 rounded-full animate-bounce">Développement Web</span>
+        <span class="bg-yellow-300 text-white px-4 py-2 rounded-full animate-bounce">Développement de Jeux</span>
+        <span class="bg-yellow-300 text-white px-4 py-2 rounded-full animate-bounce">Développement d'applications</span>
+        <span class="bg-yellow-300 text-white px-4 py-2 rounded-full animate-bounce">Design et Animation 3D</span>
+      </div>
+    </div>
+  </section>
+
+
+
+  tailwind.config = {
+  theme: {
+    extend: {
+      animation: {
+        fadeIn: "fadeIn 1.5s ease-in-out",
+        slideUp: "slideUp 1s ease-in-out",
+        bounce: "bounce 2s infinite",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+        slideUp: {
+          "0%": {
+            transform: "translateY(100%)",
+            opacity: 0,
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: 1,
+          },
+        },
+      },
+    },
+  },
+};
+
+
+
+<!--  Section  projets -->
+  <section id="projects" class="py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8 animate-fadeIn">Projets</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white shadow-md rounded-lg p-6 animate-slideUp">
+          <h3 class="text-xl font-semibold">Project 1</h3>
+          <p class="mt-2 text-gray-600">Description du projet.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 animate-slideUp">
+          <h3 class="text-xl font-semibold">Project 2</h3>
+          <p class="mt-2 text-gray-600">Description du projet.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 animate-slideUp">
+          <h3 class="text-xl font-semibold">Project 3</h3>
+          <p class="mt-2 text-gray-600">Description du projet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--avis clients-->
+  <section id="testimonials" class="py-12 bg-gradient-to-r from-yellow-400 to-yellow-300">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">Avis Clients</h2>
+      <p class="text-center max-w-2xl mx-auto mb-12 text-lg text-gray-700">
+        Voici ce que mes clients disent de mon travail. Votre satisfaction est ma priorité!</p>
+
+      <!-- grille temoignages-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Temoin 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-yellow-500 text-4xl mr-4"></i>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800">Alice Dupont</h4>
+              <p class="text-sm text-gray-500">CEO, Startup XYZ</p>
+            </div>
+          </div>
+          <!-- Satisfaction stars -->
+          <div class="mb-4 text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text-gray-700 text-sm">
+            "Un service exceptionnel, des solutions innovantes et un support constant. Très satisfait du travail accompli !"
+          </p>
+        </div>
+
+        <!-- Temoin 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-yellow-500 text-4xl mr-4"></i>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800">Jean Martin</h4>
+              <p class="text-sm text-gray-500">Freelancer</p>
+            </div>
+          </div>
+          <div class="mb-4 text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-700 text-sm">
+            "Le projet a été livré à temps avec une qualité au-delà de mes attentes. Je recommande vivement."
+          </p>
+        </div>
+
+        <!-- Temoin 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-yellow-500 text-4xl mr-4"></i>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800">Sophie Lemaitre</h4>
+              <p class="text-sm text-gray-500">Manager, Tech Corp</p>
+            </div>
+          </div>
+          <div class="mb-4 text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text-gray-700 text-sm">
+            "Une collaboration enrichissante et un professionnalisme hors pair. Merci encore pour ce projet réussi."
+          </p>
+        </div>
+
+        <!-- Temoin 4 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-yellow-500 text-4xl mr-4"></i>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800">Hugo Bernard</h4>
+              <p class="text-sm text-gray-500">Développeur Web</p>
+            </div>
+          </div>
+          <div class="mb-4 text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-700 text-sm">
+            "Une expertise technique impressionnante et une communication claire. C'était un plaisir de travailler ensemble."
+          </p>
+        </div>
+
+        <!-- Temoin 5 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-yellow-500 text-4xl mr-4"></i>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800">Emma Leroy</h4>
+              <p class="text-sm text-gray-500">Entrepreneuse</p>
+            </div>
+          </div>
+          <div class="mb-4 text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="text-gray-700 text-sm">
+            "Un service client exceptionnel et un design incroyable. Mon site a reçu d'excellents retours grâce à lui."
+          </p>
+        </div>
+
+        <!-- Temoin 6 -->
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
+          <div class="flex items-center mb-4">
+            <i class="fas fa-user-circle text-yellow-500 text-4xl mr-4"></i>
+            <div>
+              <h4 class="font-bold text-lg text-gray-800">Lucas Fontaine</h4>
+              <p class="text-sm text-gray-500">Responsable Marketing</p>
+            </div>
+          </div>
+          <div class="mb-4 text-yellow-500">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="text-gray-700 text-sm">
+            "Des idées innovantes et une exécution parfaite. Ce projet a dépassé toutes mes attentes."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<section id="about" class="py-12 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8 animate-fadeIn">À Propos</h2>
+      <div class="text-center max-w-2xl mx-auto text-lg mb-12 animate-fadeIn">
+        <p>
+          Récemment diplômé en Bachelor of Computer Applications, je suis passionné par
+          l'informatique et spécialisé dans la cybersécurité, l'intelligence artificielle et le développement de jeux.
+        </p>
+      </div>
+      <!--carousel-->
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/IMG_4987.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/IMG_5019.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/images/IMG_4985.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+<section id="contact" class="py-12 bg-yellow-800 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-8">Contactez-moi</h2>
+      <p class="text-center max-w-2xl mx-auto mb-12 text-lg">
+        Vous avez un projet ou une idée? N'hésitez pas à me contacter! Je suis disponible pour discuter de vos besoins et trouver des solutions adaptées.
+      </p>
+
+      <!-- Timer -->
+      <div class="text-center mb-8">
+        <p class="text-xl font-semibold">Temps restant avant réponse garantie :</p>
+        <div id="timer" class="text-3xl font-bold text-blue-400 mt-2">00:00:00</div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="max-w-4xl mx-auto bg-yellow-500 p-8 rounded-lg shadow-lg animate-fadeIn">
+        <form>
+          <!-- Name -->
+          <div class="mb-6">
+            <label for="name" class="block text-sm font-medium mb-2">Nom complet</label>
+            <input type="text" id="name" class="w-full p-3 rounded-lg bg-yellow-700 border border-gray-600 focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Entrez votre nom complet" required />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-6">
+            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+            <input type="email" id="email" class="w-full p-3 rounded-lg bg-yellow-700 border border-gray-600 focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Entrez votre email" required />
+          </div>
+
+          <!-- Message -->
+          <div class="mb-6">
+            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+            <textarea id="message" rows="5" class="w-full p-3 rounded-lg bg-yellow-700 border border-gray-600 focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Écrivez votre message" required></textarea>
+          </div>
+
+          <!--  Button -->
+          <div class="text-center">
+            <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg shadow-lg font-semibold transition duration-300">
+              Envoyer le message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
