@@ -45,17 +45,13 @@
       </div>
     </div>
   </header>
-
-<!-- a propos -->
+<!-- À propos -->
 <section id="about" class="py-16 bg-gradient-to-r from-gray-100 to-gray-200">
-  <div class="container mx-auto px-6">
-    <!-- Titre -->
-    <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-8 animate-fadeIn">
-      Qui Suis-Je ?
-    </h2>
-    <!-- Texte description -->
-    <div class="text-center max-w-3xl mx-auto text-lg mb-12 animate-slideUp">
-      <p class="text-gray-700 leading-relaxed">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+    <!-- Texte Description -->
+    <div class="md:w-1/2 mb-8 md:mb-0 text-left animate-slideUp">
+      <h2 class="text-4xl font-extrabold text-gray-800 mb-8">Qui Suis-Je ?</h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-12">
         Passionné par l'univers de l'informatique, je suis un jeune diplômé en 
         <span class="text-yellow-500 font-bold">Bachelor of Computer Applications</span>. 
         Avec une expertise en <span class="text-yellow-500 font-bold">Cybersécurité</span>, 
@@ -64,10 +60,13 @@
         mon objectif est de repousser les limites de l'innovation. 
         Créatif et déterminé, je suis prêt à transformer vos idées en solutions remarquables.
       </p>
+      <a href="/path/to/CV.pdf" download class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white px-6 py-3 rounded-lg">
+        Télécharger mon CV
+      </a>
     </div>
 
-    <!-- Carousel Section -->
-    <div class="relative max-w-5xl mx-auto animate-fadeIn">
+    <!-- Carousel déplacé vers la droite avec plus de marge -->
+    <div class="md:w-1/2 ml-12 animate-fadeIn">
       <div id="carouselAbout" class="carousel slide" data-bs-ride="carousel">
         <!-- Images du carousel -->
         <div class="carousel-inner rounded-lg overflow-hidden shadow-lg">
@@ -336,20 +335,115 @@
     </div>
   </section>
 
+<!-- Services Section -->
+<section id="services" class="bg-gradient-to-r from-yellow-400 to-yellow-200 py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center text-white mb-12 animate-fadeIn">Mes Services Offerts</h2>
+    <div class="flex flex-wrap justify-center gap-8">
+
+      <!-- Service 1: Cybersécurité - Sécurisation des Systèmes -->
+      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+        <div class="text-center mb-4">
+          <i class="fas fa-shield-alt text-5xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-800">Sécurisation des Systèmes</h3>
+        <p class="text-gray-600">Je protège vos infrastructures informatiques contre les cyberattaques, assurant la sécurité de vos données et la continuité de vos activités.</p>
+        <ul class="list-disc pl-5 mt-4 text-gray-500">
+          <li>Audit de sécurité</li>
+          <li>Protection contre les attaques DDoS</li>
+          <li>Solutions de gestion des identités</li>
+        </ul>
+      </div>
+
+      <!-- Service 2: Intelligence Artificielle - Automatisation et Analyse de Données -->
+      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+        <div class="text-center mb-4">
+          <i class="fas fa-brain text-5xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-800">Automatisation et Analyse de Données</h3>
+        <p class="text-gray-600">Développer des solutions d’IA pour optimiser vos processus métier, automatiser les tâches répétitives et extraire des insights précieux de vos données.</p>
+        <ul class="list-disc pl-5 mt-4 text-gray-500">
+          <li>Apprentissage automatique (ML)</li>
+          <li>Traitement du langage naturel (NLP)</li>
+          <li>Automatisation des processus robotisés (RPA)</li>
+        </ul>
+      </div>
+
+      <!-- Service 3: Développement Web - Sites et Applications Web Sur-Mesure -->
+      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+        <div class="text-center mb-4">
+          <i class="fas fa-code text-5xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-800">Développement Web Sur-Mesure</h3>
+        <p class="text-gray-600">Conception de sites web modernes, rapides et réactifs qui répondent aux besoins spécifiques de votre entreprise, tout en améliorant l'expérience utilisateur.</p>
+        <ul class="list-disc pl-5 mt-4 text-gray-500">
+          <li>Création de sites vitrines et e-commerce</li>
+          <li>Développement d’applications web progressives (PWA)</li>
+          <li>Optimisation SEO pour le référencement</li>
+        </ul>
+      </div>
+
+      <!-- Service 4: Développement de Jeux - Jeux Interactifs et Immersifs -->
+      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+        <div class="text-center mb-4">
+          <i class="fas fa-gamepad text-5xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-800">Création de Jeux Interactifs</h3>
+        <p class="text-gray-600">Développement de jeux vidéo captivants, que ce soit pour mobile, PC ou réalité virtuelle, offrant des expériences immersives pour vos utilisateurs.</p>
+        <ul class="list-disc pl-5 mt-4 text-gray-500">
+          <li>Jeux en 3D et 2D</li>
+          <li>Réality virtuelle et augmentée (VR/AR)</li>
+          <li>Développement de gameplay interactif</li>
+        </ul>
+      </div>
+
+      <!-- Service 5: Développement d'Applications - Applications Mobiles et Logicielles -->
+      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+        <div class="text-center mb-4">
+          <i class="fas fa-mobile-alt text-5xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-800">Applications Mobiles Sur-Mesure</h3>
+        <p class="text-gray-600">Développement d'applications mobiles pour iOS et Android, adaptées à vos besoins métier, et offrant une expérience utilisateur fluide et intuitive.</p>
+        <ul class="list-disc pl-5 mt-4 text-gray-500">
+          <li>Applications natives et hybrides</li>
+          <li>Intégration avec des API tierces</li>
+          <li>Optimisation des performances et UX</li>
+        </ul>
+      </div>
+
+      <!-- Service 6: Design et Animation 3D - Création Visuelle Dynamique -->
+      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+        <div class="text-center mb-4">
+          <i class="fas fa-cogs text-5xl text-yellow-500"></i>
+        </div>
+        <h3 class="text-2xl font-semibold mb-2 text-blue-800">Design et Animation 3D</h3>
+        <p class="text-gray-600">Conception de modèles 3D et d'animations réalistes pour vos projets créatifs, de la visualisation de produits à la production de vidéos animées.</p>
+        <ul class="list-disc pl-5 mt-4 text-gray-500">
+          <li>Animation 3D pour films et publicités</li>
+          <li>Modélisation de produits et prototypes</li>
+          <li>Réalisation de simulations et visualisations</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 
-  <!--section formation -->
 
+
+<!--section formation-->
   <section id="education" class="bg-gradient-to-r from-yellow-400 to-yellow-300 py-16">
     <div class="container mx-auto px-6">
       <!-- Titre -->
       <h2 class="text-5xl font-bold text-center text-gray-900 mb-12">
         <span class="border-b-4 border-gray-900">Formations</span>
       </h2>
+  
+      <!-- Ligne centrale -->
       <div class="relative">
-        <!-- Ligne centrale -->
-        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-800"></div>
-
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-dotted-yellow"></div>
+  
         <!-- Formation 1 -->
         <div class="flex items-center justify-between mb-16 group">
           <div class="w-6/12">
@@ -368,7 +462,7 @@
             </div>
           </div>
         </div>
-
+  
         <!-- Formation 2 -->
         <div class="flex items-center justify-between mb-16 group">
           <div class="w-6/12 flex justify-center">
@@ -387,7 +481,7 @@
             </div>
           </div>
         </div>
-
+  
         <!-- Formation 3 -->
         <div class="flex items-center justify-between mb-16 group">
           <div class="w-6/12">
@@ -408,7 +502,11 @@
         </div>
       </div>
     </div>
+  
+ 
   </section>
+  
+
 <!--section projets-->
   <section id="projects" class="py-16 bg-gray-50">
     <div class="container mx-auto px-6">
@@ -544,6 +642,7 @@
     </div>
   </section>
   
+  
   <!--section contact-->
 
   <section id="contact" class="py-16 bg-gradient-to-r from-yellow-600 to-yellow-800 text-white">
@@ -552,7 +651,6 @@
       <p class="text-center max-w-2xl mx-auto mb-10 text-lg">
         Vous avez un projet passionnant ou une idée innovante ? Discutons-en ! Je suis disponible pour comprendre vos besoins et vous accompagner dans la réalisation de vos objectifs.
       </p>
-  
       <!-- Icon and Short Description -->
       <div class="text-center mb-12">
         <div class="flex justify-center space-x-6">
