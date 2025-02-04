@@ -26,16 +26,43 @@
     <div class="container mx-auto px-6 py-4">
       <nav class="flex justify-between items-center">
         <a href="#" class="text-2xl font-bold animate-fadeIn">MonPortfolio</a>
+    
+        <!-- Menu Desktop -->
         <ul class="hidden md:flex space-x-6">
-          <li><a href="#about" class="hover:text-yellow-300">À Propos</a></li>
-          <li><a href="#skills" class="hover:text-yellow-300">Compétences</a></li>
-          <li><a href="#projects" class="hover:text-yellow-300">Projets</a></li>
-          <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+          <li><a href="#about" class="font-semibold hover:text-yellow-300">À Propos</a></li>
+          <li><a href="#skills" class="font-semibold hover:text-yellow-300">Compétences</a></li>
+          <li><a href="#projects" class="font-semibold hover:text-yellow-300">Projets</a></li>
+          <li><a href="#contact" class="font-semibold hover:text-yellow-300">Contact</a></li>
         </ul>
-        <button class="block md:hidden text-2xl focus:outline-none animate-bounce">
+    
+        <!-- Bouton Hamburger -->
+        <button id="menu-btn" class="block md:hidden text-2xl focus:outline-none animate-bounce">
           ☰
         </button>
       </nav>
+    
+      <!-- Menu Mobile -->
+      <div id="menu" class="hidden md:hidden flex flex-col bg-yellow-600 text-white mt-4 rounded-lg shadow-lg p-4">
+        <a href="#about" class="py-2 font-semibold hover:bg-yellow-700 rounded">À Propos</a>
+        <a href="#skills" class="py-2 font-semibold hover:bg-yellow-700 rounded">Compétences</a>
+        <a href="#projects" class="py-2 font-semibold hover:bg-yellow-700 rounded">Projets</a>
+        <a href="#contact" class="py-2 font-semibold hover:bg-yellow-700 rounded">Contact</a>
+      </div>
+    </div>
+    
+
+  <script>
+    // Toggle du menu hamburger
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
+
+
+<!--hero-->
       <div class="mt-12 text-center">
         <h1 class="text-4xl md:text-6xl font-extrabold animate-slideUp">
           Bonjour, je suis <span class="text-yellow-900">[Gouakou Melvin]</span>
@@ -338,91 +365,63 @@
 <!-- Services Section -->
 <section id="services" class="bg-gradient-to-r from-yellow-400 to-yellow-200 py-16">
   <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center text-white mb-12 animate-fadeIn">Mes Services Offerts</h2>
-    <div class="flex flex-wrap justify-center gap-8">
+    <h2 class="text-4xl font-bold text-center text-dark mb-12 animate-fadeIn">Mes Services Offerts</h2>
+    
+    <!-- Grid Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- Service 1: Cybersécurité - Sécurisation des Systèmes -->
-      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+      <!-- Service 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
         <div class="text-center mb-4">
           <i class="fas fa-shield-alt text-5xl text-yellow-500"></i>
         </div>
         <h3 class="text-2xl font-semibold mb-2 text-blue-800">Sécurisation des Systèmes</h3>
-        <p class="text-gray-600">Je protège vos infrastructures informatiques contre les cyberattaques, assurant la sécurité de vos données et la continuité de vos activités.</p>
-        <ul class="list-disc pl-5 mt-4 text-gray-500">
-          <li>Audit de sécurité</li>
-          <li>Protection contre les attaques DDoS</li>
-          <li>Solutions de gestion des identités</li>
-        </ul>
+        <p class="text-gray-600">Je protège vos infrastructures informatiques contre les cyberattaques.</p>
       </div>
 
-      <!-- Service 2: Intelligence Artificielle - Automatisation et Analyse de Données -->
-      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+      <!-- Service 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
         <div class="text-center mb-4">
           <i class="fas fa-brain text-5xl text-yellow-500"></i>
         </div>
         <h3 class="text-2xl font-semibold mb-2 text-blue-800">Automatisation et Analyse de Données</h3>
-        <p class="text-gray-600">Développer des solutions d’IA pour optimiser vos processus métier, automatiser les tâches répétitives et extraire des insights précieux de vos données.</p>
-        <ul class="list-disc pl-5 mt-4 text-gray-500">
-          <li>Apprentissage automatique (ML)</li>
-          <li>Traitement du langage naturel (NLP)</li>
-          <li>Automatisation des processus robotisés (RPA)</li>
-        </ul>
+        <p class="text-gray-600">Développement de solutions IA pour optimiser les processus métier.</p>
       </div>
 
-      <!-- Service 3: Développement Web - Sites et Applications Web Sur-Mesure -->
-      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+      <!-- Service 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
         <div class="text-center mb-4">
           <i class="fas fa-code text-5xl text-yellow-500"></i>
         </div>
         <h3 class="text-2xl font-semibold mb-2 text-blue-800">Développement Web Sur-Mesure</h3>
-        <p class="text-gray-600">Conception de sites web modernes, rapides et réactifs qui répondent aux besoins spécifiques de votre entreprise, tout en améliorant l'expérience utilisateur.</p>
-        <ul class="list-disc pl-5 mt-4 text-gray-500">
-          <li>Création de sites vitrines et e-commerce</li>
-          <li>Développement d’applications web progressives (PWA)</li>
-          <li>Optimisation SEO pour le référencement</li>
-        </ul>
+        <p class="text-gray-600">Conception de sites web modernes et réactifs pour vos besoins.</p>
       </div>
 
-      <!-- Service 4: Développement de Jeux - Jeux Interactifs et Immersifs -->
-      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+      <!-- Service 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
         <div class="text-center mb-4">
           <i class="fas fa-gamepad text-5xl text-yellow-500"></i>
         </div>
         <h3 class="text-2xl font-semibold mb-2 text-blue-800">Création de Jeux Interactifs</h3>
-        <p class="text-gray-600">Développement de jeux vidéo captivants, que ce soit pour mobile, PC ou réalité virtuelle, offrant des expériences immersives pour vos utilisateurs.</p>
-        <ul class="list-disc pl-5 mt-4 text-gray-500">
-          <li>Jeux en 3D et 2D</li>
-          <li>Réality virtuelle et augmentée (VR/AR)</li>
-          <li>Développement de gameplay interactif</li>
-        </ul>
+        <p class="text-gray-600">Développement de jeux immersifs pour mobile, PC et VR.</p>
       </div>
 
-      <!-- Service 5: Développement d'Applications - Applications Mobiles et Logicielles -->
-      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+      <!-- Service 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
         <div class="text-center mb-4">
           <i class="fas fa-mobile-alt text-5xl text-yellow-500"></i>
         </div>
         <h3 class="text-2xl font-semibold mb-2 text-blue-800">Applications Mobiles Sur-Mesure</h3>
-        <p class="text-gray-600">Développement d'applications mobiles pour iOS et Android, adaptées à vos besoins métier, et offrant une expérience utilisateur fluide et intuitive.</p>
-        <ul class="list-disc pl-5 mt-4 text-gray-500">
-          <li>Applications natives et hybrides</li>
-          <li>Intégration avec des API tierces</li>
-          <li>Optimisation des performances et UX</li>
-        </ul>
+        <p class="text-gray-600">Développement d'applications iOS et Android intuitives.</p>
       </div>
 
-      <!-- Service 6: Design et Animation 3D - Création Visuelle Dynamique -->
-      <div class="w-full md:w-1/3 bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
+      <!-- Service 6 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-slideUp">
         <div class="text-center mb-4">
           <i class="fas fa-cogs text-5xl text-yellow-500"></i>
         </div>
         <h3 class="text-2xl font-semibold mb-2 text-blue-800">Design et Animation 3D</h3>
-        <p class="text-gray-600">Conception de modèles 3D et d'animations réalistes pour vos projets créatifs, de la visualisation de produits à la production de vidéos animées.</p>
-        <ul class="list-disc pl-5 mt-4 text-gray-500">
-          <li>Animation 3D pour films et publicités</li>
-          <li>Modélisation de produits et prototypes</li>
-          <li>Réalisation de simulations et visualisations</li>
-        </ul>
+        <p class="text-gray-600">Conception de modèles et animations 3D pour vos projets.</p>
       </div>
 
     </div>
@@ -432,80 +431,81 @@
 
 
 
-<!--section formation-->
-  <section id="education" class="bg-gradient-to-r from-yellow-400 to-yellow-300 py-16">
-    <div class="container mx-auto px-6">
-      <!-- Titre -->
-      <h2 class="text-5xl font-bold text-center text-gray-900 mb-12">
-        <span class="border-b-4 border-gray-900">Formations</span>
-      </h2>
-  
-      <!-- Ligne centrale -->
-      <div class="relative">
-        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-dotted-yellow"></div>
-  
-        <!-- Formation 1 -->
-        <div class="flex items-center justify-between mb-16 group">
-          <div class="w-6/12">
-            <div class="bg-white rounded-lg shadow-lg p-6 ml-auto hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <h3 class="text-2xl font-extrabold text-gray-900">Bachelor of Computer Applications</h3>
-              <p class="text-gray-600">Université XYZ | 2021 - 2024</p>
-              <p class="text-gray-700 mt-4">
-                Études approfondies en informatique, mettant l'accent sur la programmation, la cybersécurité et l'intelligence artificielle.
-              </p>
-            </div>
-          </div>
-          <div class="w-6/12 flex justify-center">
-            <div class="w-16 h-16 bg-yellow-500 text-white flex items-center justify-center rounded-full shadow-md text-2xl relative group-hover:animate-pulse">
-              <i class="fas fa-graduation-cap"></i>
-              <div class="absolute w-24 h-24 rounded-full border-4 border-yellow-400 opacity-50 animate-ping"></div>
-            </div>
+
+<!-- Section Formation -->
+<section id="education" class="bg-gradient-to-r from-yellow-400 to-yellow-300 py-16">
+  <div class="container mx-auto px-6">
+    <!-- Titre -->
+    <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-12">
+      <span >Formations</span>
+    </h2>
+
+    <!-- Conteneur des formations -->
+    <div class="relative flex flex-col md:block">
+      <!-- Ligne centrale sur grand écran -->
+      <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-yellow-600"></div>
+
+      <!-- Formation 1 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start md:justify-between mb-16 group">
+        <div class="w-full md:w-5/12 px-4 order-2 md:order-1">
+          <div class="bg-white rounded-lg shadow-lg p-6 mx-auto hover:shadow-2xl hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-extrabold text-gray-900 text-center md:text-left">Bachelor of Computer Applications</h3>
+            <p class="text-gray-600 text-center md:text-left">Université XYZ | 2021 - 2024</p>
+            <p class="text-gray-700 mt-4 text-center md:text-left">
+              Études approfondies en informatique, mettant l'accent sur la programmation, la cybersécurité et l'intelligence artificielle.
+            </p>
           </div>
         </div>
-  
-        <!-- Formation 2 -->
-        <div class="flex items-center justify-between mb-16 group">
-          <div class="w-6/12 flex justify-center">
-            <div class="w-16 h-16 bg-yellow-500 text-white flex items-center justify-center rounded-full shadow-md text-2xl relative group-hover:animate-pulse">
-              <i class="fas fa-laptop-code"></i>
-              <div class="absolute w-24 h-24 rounded-full border-4 border-yellow-400 opacity-50 animate-ping"></div>
-            </div>
-          </div>
-          <div class="w-6/12">
-            <div class="bg-white rounded-lg shadow-lg p-6 mr-auto hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <h3 class="text-2xl font-extrabold text-gray-900">Certification en Développement Web</h3>
-              <p class="text-gray-600">Coursera | 2023</p>
-              <p class="text-gray-700 mt-4">
-                Formation axée sur les technologies modernes telles que HTML, CSS, JavaScript, et frameworks comme React et Tailwind CSS.
-              </p>
-            </div>
+        <div class="hidden md:flex md:w-2/12 justify-center order-1 md:order-2 mt-8 md:mt-0 md:mb-6 md:-translate-x-1/3">
+          <div class="w-24 h-24 bg-yellow-500 text-white flex items-center justify-center rounded-full shadow-md text-5xl relative">
+            <i class="fas fa-graduation-cap"></i>
+            <div class="absolute w-24 h-24 rounded-full border-4 border-yellow-400 opacity-50 animate-ping"></div>
           </div>
         </div>
-  
-        <!-- Formation 3 -->
-        <div class="flex items-center justify-between mb-16 group">
-          <div class="w-6/12">
-            <div class="bg-white rounded-lg shadow-lg p-6 ml-auto hover:shadow-2xl hover:scale-105 transform transition duration-300">
-              <h3 class="text-2xl font-extrabold text-gray-900">Formation en Intelligence Artificielle</h3>
-              <p class="text-gray-600">Udemy | 2022</p>
-              <p class="text-gray-700 mt-4">
-                Apprentissage des concepts d'intelligence artificielle, apprentissage machine, et réseaux neuronaux.
-              </p>
-            </div>
+      </div>
+
+      <!-- Formation 2 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start md:justify-between mb-16 group">
+        <div class="hidden md:flex md:w-2/12 justify-center order-2 md:order-1 mt-8 md:mt-0 md:mb-6 md:-translate-x-1/3">
+          <div class="w-24 h-24 bg-yellow-500 text-white flex items-center justify-center rounded-full shadow-md text-5xl relative">
+            <i class="fas fa-laptop-code"></i>
+            <div class="absolute w-32 h-32 rounded-full border-4 border-yellow-400 opacity-50 animate-ping"></div>
           </div>
-          <div class="w-6/12 flex justify-center">
-            <div class="w-16 h-16 bg-yellow-500 text-white flex items-center justify-center rounded-full shadow-md text-2xl relative group-hover:animate-pulse">
-              <i class="fas fa-brain"></i>
-              <div class="absolute w-24 h-24 rounded-full border-4 border-yellow-400 opacity-50 animate-ping"></div>
-            </div>
+        </div>
+        <div class="w-full md:w-5/12 px-4 order-1 md:order-2">
+          <div class="bg-white rounded-lg shadow-lg p-6 mx-auto hover:shadow-2xl hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-extrabold text-gray-900 text-center md:text-left">Certification en Développement Web</h3>
+            <p class="text-gray-600 text-center md:text-left">Coursera | 2023</p>
+            <p class="text-gray-700 mt-4 text-center md:text-left">
+              Formation axée sur HTML, CSS, JavaScript, et frameworks comme React et Tailwind CSS.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formation 3 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start md:justify-between mb-16 group">
+        <div class="w-full md:w-5/12 px-4 order-2 md:order-1">
+          <div class="bg-white rounded-lg shadow-lg p-6 mx-auto hover:shadow-2xl hover:scale-105 transition duration-300">
+            <h3 class="text-2xl font-extrabold text-gray-900 text-center md:text-left">Formation en Intelligence Artificielle</h3>
+            <p class="text-gray-600 text-center md:text-left">Udemy | 2022</p>
+            <p class="text-gray-700 mt-4 text-center md:text-left">
+              Concepts d'intelligence artificielle, apprentissage machine et réseaux neuronaux.
+            </p>
+          </div>
+        </div>
+        <div class="hidden md:flex md:w-2/12 justify-center order-1 md:order-2 mt-8 md:mt-0 md:mb-6 md:-translate-x-1/3">
+          <div class="w-24 h-24 bg-yellow-500 text-white flex items-center justify-center rounded-full shadow-md text-5xl relative">
+            <i class="fas fa-brain"></i>
+            <div class="absolute w-32 h-32 rounded-full border-4 border-yellow-400 opacity-50 animate-ping"></div>
           </div>
         </div>
       </div>
     </div>
-  
- 
-  </section>
-  
+  </div>
+</section>
+
+
 
 <!--section projets-->
   <section id="projects" class="py-16 bg-gray-50">
@@ -643,77 +643,47 @@
   </section>
   
   
-  <!--section contact-->
+ <!--section contact-->
 
-  <section id="contact" class="py-16 bg-gradient-to-r from-yellow-600 to-yellow-800 text-white">
-    <div class="container mx-auto px-6">
-      <h2 class="text-4xl font-bold text-center mb-6">Contactez-moi</h2>
-      <p class="text-center max-w-2xl mx-auto mb-10 text-lg">
-        Vous avez un projet passionnant ou une idée innovante ? Discutons-en ! Je suis disponible pour comprendre vos besoins et vous accompagner dans la réalisation de vos objectifs.
-      </p>
-      <!-- Icon and Short Description -->
-      <div class="text-center mb-12">
-        <div class="flex justify-center space-x-6">
-          <!-- Email Icon -->
-          <div class="relative group">
-            <i class="fas fa-envelope text-3xl"></i>
-            <div class="absolute bottom-[-20px] left-0 right-0 text-xl font-semibold text-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="mailto:votre.email@example.com">Envoyer un email</a>
-            </div>
-          </div>
-          
-          <!-- Phone Icon -->
-          <div class="relative group">
-            <i class="fas fa-phone-alt text-3xl"></i>
-            <div class="absolute bottom-[-20px] left-0 right-0 text-xl font-semibold text-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="tel:+123456789">Appeler</a>
-            </div>
-          </div>
-          
-          <!-- Location Icon -->
-          <div class="relative group">
-            <i class="fas fa-location-arrow text-3xl"></i>
-            <div class="absolute bottom-[-20px] left-0 right-0 text-xl font-semibold text-yellow-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <a href="https://goo.gl/maps/xyz">Voir l'adresse</a>
-            </div>
-          </div>
+<section id="contact" class="py-16 bg-white text-gray-900">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-6 text-yellow-600">Contactez-moi</h2>
+    <p class="text-center max-w-2xl mx-auto mb-10 text-lg">
+      Vous avez un projet passionnant ou une idée innovante ? Discutons-en ! Je suis disponible pour comprendre vos besoins et vous accompagner dans la réalisation de vos objectifs.
+    </p>
+    
+    <!-- Contact Form -->
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-xl border border-gray-200">
+      <form>
+        <!-- Name -->
+        <div class="mb-6">
+          <label for="name" class="block text-sm font-medium mb-2 text-gray-700">Nom complet</label>
+          <input type="text" id="name" class="w-full p-4 rounded-lg bg-gray-100 border border-gray-300 focus:ring focus:ring-yellow-500 focus:outline-none" placeholder="Entrez votre nom complet" required />
         </div>
-        <p class="text-lg mt-4">Contactez-moi via l'un des moyens ci-dessus, ou remplissez le formulaire pour démarrer une conversation personnalisée.</p>
-      </div>
-  
-      <!-- Contact Form -->
-      <div class="max-w-4xl mx-auto bg-yellow-500 p-8 rounded-lg shadow-2xl animate-fadeIn">
-        <form>
-          <!-- Name -->
-          <div class="mb-6">
-            <label for="name" class="block text-sm font-medium mb-2">Nom complet</label>
-            <input type="text" id="name" class="w-full p-4 rounded-lg bg-yellow-700 border border-gray-600 focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Entrez votre nom complet" required />
-          </div>
-  
-          <!-- Email -->
-          <div class="mb-6">
-            <label for="email" class="block text-sm font-medium mb-2">Email</label>
-            <input type="email" id="email" class="w-full p-4 rounded-lg bg-yellow-700 border border-gray-600 focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Entrez votre email" required />
-          </div>
-  
-          <!-- Message -->
-          <div class="mb-6">
-            <label for="message" class="block text-sm font-medium mb-2">Message</label>
-            <textarea id="message" rows="5" class="w-full p-4 rounded-lg bg-yellow-700 border border-gray-600 focus:ring focus:ring-blue-500 focus:outline-none" placeholder="Écrivez votre message" required></textarea>
-          </div>
-  
-          <!-- Button -->
-          <div class="text-center">
-            <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-lg shadow-lg font-semibold transition duration-300 transform hover:scale-105">
-              Envoyer le message
-            </button>
-          </div>
-        </form>
-      </div>
+
+        <!-- Email -->
+        <div class="mb-6">
+          <label for="email" class="block text-sm font-medium mb-2 text-gray-700">Email</label>
+          <input type="email" id="email" class="w-full p-4 rounded-lg bg-gray-100 border border-gray-300 focus:ring focus:ring-yellow-500 focus:outline-none" placeholder="Entrez votre email" required />
+        </div>
+
+        <!-- Message -->
+        <div class="mb-6">
+          <label for="message" class="block text-sm font-medium mb-2 text-gray-700">Message</label>
+          <textarea id="message" rows="5" class="w-full p-4 rounded-lg bg-gray-100 border border-gray-300 focus:ring focus:ring-yellow-500 focus:outline-none" placeholder="Écrivez votre message" required></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center">
+          <button type="submit" class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded-lg shadow-lg font-semibold transition duration-300 transform hover:scale-105">
+            Envoyer le message
+          </button>
+        </div>
+      </form>
     </div>
-  </section>
-  
-  
+  </div>
+</section>
+
 
 
   <!-- Footer -->
