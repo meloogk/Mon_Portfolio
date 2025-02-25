@@ -61,3 +61,35 @@
   .skill-item:hover {
     transform: scale(1.1);
   }
+
+
+
+  #education {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background\ section\ formation.webp') ;
+    background-size: cover; /* L’image occupe tout l’espace */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Remplit l’écran en hauteur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*  TABLETTES & PETITS ÉCRANS : Ajustements */
+  @media (max-width: 1024px) {
+    #education {
+      background-position: center;
+      background-attachment: scroll; /* Empêche le décalage sur mobile */
+      min-height: 50vh; /* L’image prend toute la hauteur disponible */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #education {
+      background-size: cover; /* Garde l’image pleine largeur */
+      background-position: center; /* Assure un bon cadrage */
+      min-height: 50vh; /* L’image couvre bien l’écran */
+    }
+  }
+  
