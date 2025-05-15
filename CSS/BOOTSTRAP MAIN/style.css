@@ -66,7 +66,7 @@
 
   #education {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/background\ section\ formation.webp') ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/diplome.jpg') ;
     background-size: cover; /* L’image occupe tout l’espace */
     background-position: center;
     background-repeat: no-repeat;
